@@ -1,0 +1,17 @@
+# Publish ONLY the practice/ folder. Ignore everything else at the repo root.
+/*
+!.gitignore
+!practice/
+
+# ...but never publish secrets, even inside practice/
+practice/.env
+practice/.env.*
+!practice/.env.example
+
+# OS / editor cruft (anywhere)
+**/.DS_Store
+**/.ipynb_checkpoints/
+**/__pycache__/
+
+# Claude
+.claude/
